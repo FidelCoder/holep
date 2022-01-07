@@ -1,0 +1,185 @@
+{% extends "businessapp/base.html" %} 
+{% block content %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+<style>
+.griff{
+    background-color: #ccc;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.contact-form{
+    width: 100px;
+}
+input, textarea{
+    width: 50%;
+    background-color: lightblue;
+    border: none;
+    padding: 0.5rem;
+
+}
+input:focus,
+textarea:focus{
+    outline: none;
+}
+.tag{
+    padding: 5px;
+    font-size: 20px;
+}
+.container{
+    background-color: steelblue;
+    padding: 2rem;
+    border-radius: 10px;
+    overflow: none;
+    display: flex;
+}
+.submit-btn{
+    background-color: lightslategray;
+    border: none;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: white;
+    cursor: pointer;
+}
+.submit-btn:hover{
+    background-color: slategrey;
+}
+.inside{
+    margin-left: 50px;
+}
+
+
+
+
+.contact-info{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  padding-left: 15%;
+  padding-right: -45%;
+}
+
+
+.card{
+  background: #2f3542;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: calc(33% - 20px);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.card-icon{
+  font-size: 28px;
+  background: #ff6348;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+  background: none;
+  color: #ff6348;
+  transform: scale(1.6);
+}
+
+.card p{
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.card:hover p{
+  max-height: 40px;
+  opacity: 1;
+}
+
+
+@media screen and (max-width:800px) {
+  .contact-info{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
+
+</style>
+    <div class="griff">
+        <div class="container">
+            <form action="", method="POST" class="contact-form" style="flex: 2;">
+                {% csrf_token %}
+                <div class="form-control">
+                    <div class="tag">Full Name</div>
+                    <input type="text" name="full-name">
+                </div>
+                <div class="form-control">
+                    <div class="tag">Email</div>
+                    <input type="text" name="email">
+                </div>
+                <div class="form-control">
+                    <div class="tag">Subject</div>
+                    <input type="text" name="subject">
+                </div>
+                <div class="form-control">
+                    <div class="tag">Message</div>
+                    <textarea name="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="form-cotrol">
+                    <input type="submit" class="btn submit-btn" value="Send Message">
+                </div>
+            </form>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+    <div>
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-689c74ca-86f4-4d35-9a89-b26b40cd479f"></div>
+    </div>
+    
+
+
+
+
+
+
+    <div class="contact-info">
+        <div class="card">
+          <i class="card-icon far fa-envelope"></i>
+          <p>holepcompanyltd@gmail.com</p>
+          <p>beaconhopeco@gmail.com</p>
+        </div>
+  
+        <div class="card">
+          <i class="card-icon fas fa-phone"></i>
+          <p>+254722720690</p>
+        </div>
+  
+        <div class="card">
+          <i class="card-icon fas fa-map-marker-alt"></i>
+          <p>P.O.Box 75891-00200 NAIROBI</p>
+        </div>
+      </div>
+{%endblock%}

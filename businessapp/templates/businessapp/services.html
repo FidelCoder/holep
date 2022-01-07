@@ -1,0 +1,256 @@
+{% extends "businessapp/base.html" %}
+{% load static %}
+{% block content %}
+<head>
+    <title>SERVICES PAGE</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.white-color{
+	color: #f4f4f4;
+	text-align: center;
+	padding-top: 10px;
+}
+.services-section {
+	background-color: #232020;
+	padding-bottom: 40px;
+}
+.services-section hr{
+	border-bottom: 4px dashed #fd2034;
+	width: 42px;
+	margin-left: 0px;
+}
+.services-section .services-detail {
+	border-radius: 5px;
+	transition: all 0.3s ease-in-out;
+	position: relative;
+	top: 0px;
+	padding: 70px 40px 60px 40px;
+	margin-top: 32px;
+	background-color: #3a35358c;
+}
+.services-section .services-detail:hover{
+	box-shadow: 0px 16px 22px 0px rgba(90,91,95,0.3);
+	top: -5px;
+	background-color: #f4f4f4;
+}
+.services-section .services-detail .fa{
+	font-size: 60px;
+	color: #f4f4f4;
+	margin-bottom: 13px;
+}
+.services-section .services-detail:hover .fa{
+	color: #fd2034;
+}
+.services-detail h3{
+	color: #f4f4f4;
+	font-size: 25px;
+	font-family: 'Roboto',sans-serif;
+}
+.services-detail:hover h3{
+	color: #333333;
+} 
+.services-detail p{
+	color: #f4f4f4;
+	font-size: 15px;
+}
+.services-detail:hover p{
+	color: #333333;
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+.body1{
+    font-family: 'Poppins', sans-serif !important;
+}
+.container1{
+    padding-top: 50px;
+}
+h2{
+    text-align: center;
+    padding: 20px;
+}
+.slick-slide{
+    margin: 0 20px;
+}
+.slick-slide img{
+    width: 100%;
+}
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+.slick-slide img{
+    display: block;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}
+.copy{
+    padding-top: 250px;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<body>
+
+       
+        <section id="services" class="services-section section-space-padding">
+            <div class="container">
+ 
+                <div class="section-title">
+                    <i class="icon-support"></i>
+                    <h2 class="white-color">Our <span>Services</span></h2>
+                </div>
+ 
+                <div class="row">
+                    
+                    <div class="col-md-4 col-sm-6 3d-hover">
+                        <div class="services-detail hover-effect-3d">
+                            <h3>COUNSELLING SERVICES</h3>
+                            <hr>
+                            <p>
+                             The organizationspromotes an eclectic/integrative approach to counseling base on a humanistic model of counseling and training.
+                              In both counseling and training great care is taken to respect and enhance the autonomy of our clients, trainees and supervisors all this is derived from principles of character,
+                               competence to the community on global perspective. Effectiveness and efficiency is what is valued most.
+                         </p>
+                        </div>
+                    </div>
+ <!--2nd---->
+                    <div class="col-md-4 col-sm-6 3d-hover">
+                        <div class="services-detail hover-effect-3d">
+                            <h3>RESOURCE CENTER</h3>
+                            <hr>
+                            <p>
+                                The organizations have Resource Centres whose main purpose shall be to work with relevant bodies to disseminate the
+                                 right information in regards to thorny issues like HIV, Non-Communicable Disease (NCDs) and lifestyle diseases diabetics, ulcers and high blood pressure. The Resource Centre shall also organise several work-shops, retreats, training sensitisation
+                                 and capacity building in the community and not limited to work places in Cop-rate and government institutions.
+                            </p>
+                        </div>
+                    </div>
+ <!--3rd---->
+                
+                <div class="col-md-4 col-sm-6 3d-hover">
+                        <div class="services-detail hover-effect-3d">
+                            <h3>THERAPY</h3>
+                            <hr>
+                            <p>
+                                Regardless of your specific challenges, you can benefit from having an impartial observer listen and offer guidance
+                                Our specialities; Depression, Relationships, Anger, Cognitive Behavioral Therapy, Psychodynamic Therapy, Psychoanalysis, Anxiety, Psych Careers, Stress, Psychiatry
+                            </p>
+                        </div>
+                    </div>
+ <!--4th--->
+ 
+                   <div class="col-md-4 col-sm-6 3d-hover">
+                        <div class="services-detail hover-effect-3d">
+                            <h3>TRAINING PROGRAMME</h3>
+                            <hr>
+                            <p>Our diversified programs address specific needs of our target groups in schools,
+                            medical settings, criminal justice system, religious institutions and marriage & family.
+ 
+                            </p>
+                        </div>
+                    </div>
+  <!---5th--->
+                    
+                    <div class="col-md-4 col-sm-6 3d-hover">
+                        <div class="services-detail hover-effect-3d">
+                            <h3>OPEN/ IN HOUSE SEMINARS</h3>
+                            <hr>
+                            <p>
+                             We Conduct Open/In House Seminars under the Following Titles:-
+ HIV/AIDs Counseling, Counseling Skills, Drug and Substances Abuse, Effective parenting Skills, Stress and stress Management in the workplace, Guidance and counseling for Teachers, Leadership Skills for Head Teachers, Discipline and punishment in schools, Counseling skills for effective patient care, Trauma in Children, Psychological Debriefing and Trauma Counseling, Disaster preparedness and management for Law Enforcement Officers, Security Management, Fraud detection and investigation.
+                         </p>
+                        </div>
+                    </div>
+  <!---6th-->
+                    <div class="col-md-4 col-sm-6 3d-hover">
+                        <div class="services-detail hover-effect-3d">
+                            <h3>CONSULTANCY IN CHILD DEVELOPMENT</h3>
+                            <hr>
+                            <p>consultants will work closely with ECD Project Officer and project team in implementing of project objectives, providing technical support, working with health and schools.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+	<!--WE ALSO WORK WITH-->
+<div class="body1">
+	<div class="continer1">
+        <h2 class="text-center font-weight-bold">WE ALSO WORK WITH...</h2>
+        <section class="customer-logos slider">
+            <div class="slide"><img src="{% static 'businessapp/images/PSI.png' %}" alt="logo"></div>
+            <div class="slide"><img src="{% static 'businessapp/images/nita.jpg' %}" alt="logo"></div>
+            <div class="slide"><img src="{% static 'businessapp/images/REDONE-LOGO.jpg' %}" alt="logo"></div>
+            <div class="slide"><img src="{% static 'businessapp/images/KIBIT.png' %}" alt="logo"></div>
+            <div class="slide"><img src="{% static 'businessapp/images/gok.jpg' %}" alt="logo"></div>
+            <div class="slide"><img src="{% static 'businessapp/images/ndeg.jpg' %}" alt="logo"></div>
+            <div class="slide"><img src="{% static 'businessapp/images/aipc.jpg' %}" alt="logo"></div>
+            <div class="slide"><img src="{% static 'businessapp/images/kcpa.png' %}" alt="logo"></div>
+        </section>
+    </div>
+    
+
+    <script>
+    
+    $(document).ready(function(){
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover:false,
+            responsive: [{
+                breakpoint: 768,
+                setting: {
+                    slidesToShow:4
+                }
+            }, {
+                breakpoint: 520,
+                setting: {
+                    slidesToShow: 3
+                }
+            }]
+        });
+    });
+
+    </script>
+
+</div>
+</body>
+{%endblock%}

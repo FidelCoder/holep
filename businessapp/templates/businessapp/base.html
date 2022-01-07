@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>HOLEP IN CONJUNCTION WITH BEACON</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+        <link rel="stylesheet" href="business/static/bootstrap.min(1)">
+        <meta name="google" content="notranslate" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <style>
+/**/
+header{
+    display: inline-block;
+    width: 100%;
+    padding: 25px 80px;
+    position: relative;
+    background-color: white;
+}
+.home{
+    float: left;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 15px 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: yellowgreen;
+    font-weight: 600;
+}
+
+/* Media query */
+@media screen and (max-width: 400px) {
+            body {
+                background-color: green;
+                color:white;
+            }
+        }
+
+
+.toggle-btn{
+    width: 35px;
+    position: absolute;
+    right: 80px;
+    top: 40px;
+    display: none;
+}
+.toggle-btn span{
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: yellow;
+    float: left;
+    margin-bottom: 8px;
+}
+nav{
+    float: right;
+}
+a{
+    font-size: 20px;
+}
+@media (max-width: 991px){
+    .toggle-btn{
+        display: block;
+    }
+    nav{
+        display: none;
+        width: 100px;
+        border-top: 1px solid #000;
+        padding-top: 2opx;
+        margin-top: 30px;
+    }
+    nav ul li{
+        padding: 15px 0px;
+        width: 100%;
+    }
+    nav.show{
+        display: block;
+    }
+}
+    </style>
+
+
+    <!-- Navigation -->
+<header>
+    <div class="home">
+        <a class="navbar-brand" href="{% url 'homepage' %}">HOME</a>
+    </div>
+    <nav id="nav">
+        <ul>
+            <li><a href="{% url 'blog' %}">Blog</a></li>
+            <li><a href="{% url 'services' %}">Services</a></li>
+            <li><a href="{% url 'aboutus' %}">About Us</a></li>
+            <li><a href="{% url 'contacts' %}">Contact</a></li>
+            <li><a href="{% url 'contribuition' %}">Contribute</a></li>
+            <li><a href="{% url 'Ourgallery' %}">Our Gallery</a></li>
+            <li><a href="{% url 'training' %}">Training Programe</a></li>
+            <li><a href="{% url 'value' %}">Our Values</a></li>
+            <li><a href="{% url 'index' %}">Learning Platform</a></li>
+
+        </ul>
+    </nav>
+    <div class="toggle-btn" onclick="myfunction();">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</header>
+
+    {% block content %}
+    <!-- Content Goes here -->
+    {% endblock content %}
+
+    
+    <!-- Footer 
+    
+        <footer class="py-3 bg-grey">
+        <p class="m-0 text-dark text-center ">beacon and holep are here to ensure you wellbeing</p>
+    </footer>
+    -->
+ <script type="text/javascript ">
+
+ function myfunction(){
+     var navbar = document.getElementById('nav');
+     navbar.classList.toggle('show');
+ }
+ </script>
+
+</body>
+</html>

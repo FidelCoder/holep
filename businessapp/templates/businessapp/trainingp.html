@@ -1,0 +1,150 @@
+{% extends "businessapp/base.html" %} 
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tabs</title>
+</head>
+<body>
+  <div class="mytabs">
+    <input type="radio" id="tabfree" name="mytabs" checked="checked">
+    <label for="tabfree">OUR PROGRAMME</label>
+    <div class="tab">
+      <h2></h2>
+      <p>
+          The organizations are equiped with proffesional and certified personnels who value your wellbeing,
+          and that is why they strive to ensure your satisfaction. The organizations offers certification courses
+          and training
+      </p>
+    </div>
+
+    <input type="radio" id="tabsilver" name="mytabs">
+    <label for="tabsilver">Courses</label>
+    <div class="tab">
+      <h2>Training</h2>
+      <p>
+          <ol>
+              <li>Psychological debriefing and Trauma</li>
+              <li>Career Guidance and counseling</li>
+              <li>Career Guidance and counseling</li>
+              <li>Premarital counseling</li>
+              <li>Guidance and counseling in schools</li>
+              <li>Grief and Bereavement counseling</li>
+              <li>Motivation at workplace</li>
+              <li>Managing stress at workplace</li>
+              <li>Working effectively with Criminal Offenders</li>
+              <li>Marital Therapy</li>
+              <li>Family Therapy</li>
+              <li>Child Therapy</li>
+              <li>Adolescence Counseling</li>
+              <li>Effective parenting</li>
+          </ol>
+          <h2>Certificate Courses</h2>
+          <ol>
+              <li>Psychological Counseling</li>
+              <li>Criminology and Forensic Studies</li>
+              <li>Guidance and Counseling</li>
+              <li>Counselor Supervision</li>
+              <li>Crime Scene Management</li>
+              <li>Correctional Services</li>
+              <li>Basic Counseling Skills</li>
+              <li>HIV and AIDS Counselling Skills</li>
+              <li>Youth guidance and Counseling</li>
+              <li>Counselling For Managers</li>
+              <li>Counselling For Loss</li>
+              <li>Grief and Bereavement</li>
+              <li>Stress and Stress Management Skills</li>
+              <li>Effective Parenting Skills</li>
+              <li>Guidance and counseling in schools</li>
+              <li>Psychological Debriefing and Trauma Counseling</li>
+              <li>Premarital counseling</li>
+              <li>Marital counseling</li>
+              <li>Family counseling</li>
+              <li>Substance abuse Counseling</li>
+              <li>V.C.T Counseling</li>
+              <li>Basic counseling skills</li>
+              <li>Sex therapy/counseling</li>
+              <li>Youth ministry counseling</li>
+              <li>Refreshment counseling</li>
+              <li>Retirement counseling</li>
+              <li>Addiction counseling</li>
+              <li>Solution founded brief counseling</li>
+              <li>Workplace conflict</li>
+              <li>Mid-life crisis counseling</li>
+              <li>Supervision counseling</li>
+          </ol>
+      </p>
+    </div>
+
+    <input type="radio" id="tabgold" name="mytabs">
+    <label for="tabgold">Development Programmes</label>
+    <div class="tab">
+      <p>
+        Our professional development courses are tailored to specific needs of a wide range of organizations, groups, companies and individuals.
+        They include:
+        <ol>
+            <li>Basic Counseling Skills</li>
+            <li>HIV/AIDs Counseling Skills</li>
+            <li>Youth guidance and Counseling</li>
+            <li>Counseling skills for Managers</li>
+            <li>Counseling for loss</li>
+            <li>Grief and Bereavement</li>
+            <li>Stress and stress Management</li>
+            <li>Effective parenting Skills</li>
+            <li>Guidance and counseling in schools</li>
+            <li>Psychological Debriefing and Trauma Counseling</li>
+            <li>Premarital counseling</li>
+    </p>
+        </ol>
+      </p>
+    </div>
+
+  </div>
+  <p>Go Register and take our online Training</p>
+</body>
+</html>
+
+<style>
+  body {
+    background: #ccc;
+    font-family: 'Roboto', sans-serif;
+}
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}
+</style>
+
+{%endblock%}

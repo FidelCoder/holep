@@ -1,0 +1,246 @@
+{% extends "businessapp/base.html" %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<html lang="en">
+    <style>
+        * {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+}
+.wrapper {
+	width: 1170px;
+	margin: auto;
+}
+.nav-area {
+	float: right;
+	list-style: none;
+	margin-top: 30px;
+}
+.nav-area li {
+	display: inline-block;
+}
+.nav-area li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 20px;
+	font-family: poppins;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.nav-area li a:hover {
+	background: #fff;
+	color: #333;
+}
+.logo {
+	float: left;
+}
+.logo img {
+	width: 100%;
+	padding: 15px 0;
+}
+
+.welcome-text a {
+	border: 1px solid #fff;
+	padding: 10px 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	margin-top: 20px;
+	display: inline-block;
+	color: #fff;
+}
+.welcome-text a:hover {
+	background: #fff;
+	color: #333;
+}
+/*resposive*/
+
+@media (max-width:600px) {
+	.wrapper {
+		width: 100%;
+	}
+	.welcome-text {
+		width: 100%;
+		height: auto;
+		margin: 30% 0;
+	}
+	.welcome-text h1 {
+		font-size: 30px;
+	}
+}
+
+
+.bedy{
+	margin: 0;
+	padding: 0;
+	background: #000;
+}
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bedy{
+  background: #81c644;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+
+
+.g{
+	width: 30%;
+	float: left;
+	margin: 50px, 20px;
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 8px;
+	box-shadow: 0 5px 5px rgba(0,0,0,0.15);
+}
+.g h4{
+	margin-bottom: 10px;
+}
+.g p{
+	font-size: 15px;
+	line-height: 28px;
+	height: 90px;
+	overflow: hidden;
+}
+.g a{
+	display: inline-block;
+	color: #fff;
+	background-color: #2196f3;
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 8px;
+	margin-top: 15px;
+}
+.g a:hover{
+	box-shadow: 0 5px 5px rgb(0,0,0,0.2);
+}
+.g.showContent p{
+	height: auto;
+}
+.g.showContent a.readmore-btn{
+	background-color: red;
+
+}
+
+    </style>
+
+<!--start-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		beautiful and simple website using html only -- fullywrold web tutorials
+	</title>
+</head>
+<body background="https://i.postimg.cc/YjcJg24M/aa.jpg" link="#000" alink="#017bf5" vlink="#000">
+	<br />
+	<br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+	<h1 align="center">
+		<font face="Lato" color="#017bf5" size="7">
+			HOME OF LOVE AND EMPOWERMENT PROJECT IN CONJUNCTION WITH BEACON OF HOPE
+		</font>
+	</h1>
+	<h3 align="center">
+		<font face="Lato" color="#000" size="5">
+			TAKING YOU A STEP AHEAD
+		</font>
+	</h3>
+	<br />
+	<h3 align="center">
+	<a href="#">
+		<font face="Lato" color="#000">GET STARTED WITH US</font>
+	</a>&nbsp;&nbsp;&nbsp;&nbsp;
+	<a href="https://www.youtube.com/channel/UCsQqVbkk8LkLHxaseWVsRRA">
+		<font face="Lato" color="#fff">CHECK OUR YOUTUBE</font>
+	</a>
+	</h3>
+</body>
+</html>
+
+<!--end-->
+
+<div>
+	<div class="bedy">
+		<div class="box">
+			<div class="btn">
+			</div>
+		</div>
+	<div class="g">
+		<!--<img src="" class="l" alt="">-->
+		<h4>MISSION & VISSION</h4>
+		<h5><strong>Mission</strong></h5>
+		<p>To develop and enhance an enabling learning requirement for its heterogeneous clientele in order to acquire and maintain pragmatic knowledge, creativity and enterprise with strong orientation for ethical 
+			values that enables participatory leadership, transparency, accountability and honesty in their service to humanity.</p>
+
+		<h5><strong>Vission</strong></h5>
+		<p>To become the leading Centre of excellent in the provision of solution 
+			to psychological counselors training, consultancies, supervision and research services in East and Central Africa </p>
+		<a href="javascript:void();" class="readmore-btn">Read More</a>
+	</div>
+
+	<div class="g">
+		<!--<img src="" class="l" alt="">-->
+		<h4>CORE VALUES & PHILOSOPHY</h4>
+		<p>
+			<h5><STRong>Core Values</STRong></h5>
+			<ul>
+				<li>Character</li>
+				<li>Innovation</li>
+				<li>Diversity</li>
+				<li>Competence</li>
+				<li>Community</li>
+			  </ul>
+		</p>
+		<h5><STRONG>Philosophy</STRONG></h5>
+		<p>BHCC Centre helps to realize and nature the strongholds, that is intellectual physical, spiritual, economic      
+			And social development of the client and be aware of the ability, capacity and adequate potential in oneself. <br>
+			To Improve Every Life through Innovative Giving in Education, empowering humanity with information and creating a healthy continent
+		</p>
+		<a href="javascript:void();" class="readmore-btn">Read More</a>
+	</div>
+
+	<div class="g">
+		<!--<img src="" class="l" alt="">-->
+		<h4>REASON TO CHOOSE US</h4>
+		<p>
+			<h5><strong>Our Beliefs</strong></h5>
+			our therapeutic work is guided by the belief in the human worth and dignity of our clients.
+			 In assisting people, we endeavor to protect and promote each person’s rights to self determination and individuality.
+			  We also believe that in order for counseling and therapy to be effective, clients must feel empowered and supported 
+			in identifying goals for change and in developing effective strategies for resolving their difficulties.
+		</p>
+		<p></p>
+		<a href="javascript:void();" class="readmore-btn">Read More</a>
+
+	</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+$('.readmore-btn').on('click', function(){
+	$(this).parent().toggleClass('showContent');
+
+	var replaceText = $(this).parent().hasClass('showContent') ? 'Read Less' : 'Read More';
+	$(this).text(replaceText);
+ });
+
+</script>
+</body>
+</html>
+
+{%endblock%}

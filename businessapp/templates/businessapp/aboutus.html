@@ -1,0 +1,223 @@
+{% extends "businessapp/base.html" %}
+{% load static %}
+{% block content %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple dashboard</title>
+</head>
+<style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: #ccc;
+}
+.p{
+    margin-left: 10px;
+}
+main{
+    min-height: 100vh;
+    /**background: linear-gradient(to right top, #00d2ff,#3a7bd5);**/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.glass{
+    background: whitesmoke;
+    min-height: 80vh;
+    width: 60%;
+    border-radius: 20px;
+    z-index: 1;
+    /*background:linear-gradient( to right bottom, 
+    rgba(255, 255, 255, 0.7),
+     rgba(255, 255, 255, 0.3) );*/
+     background-size: contain;
+     background-repeat: no-repeat;
+     backdrop-filter: blur(2rem);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.glass img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    /* border: inset solid 1px; */
+    top: 20%;
+    
+}
+img{
+    background: whitesmoke;
+    /* background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8),  */
+    /* rgba(255, 255, 255, 0.3)); */
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+#img1{
+    top: 12%;
+    right: 7%;
+    /* background: red; */
+
+}
+#img2{
+    bottom: -5%;
+    left: 8%;
+    object-position: right;
+}
+nav{
+    height: 10vh;
+}
+
+
+
+
+.wrapper{
+  margin-top: 50px;
+}
+
+.wrapper h1{
+  font-family: 'Allura', cursive;
+  font-size: 52px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+.team .team_member h3{
+  color: #81c644;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.team .team_member p.role{
+  color: #ccc;
+  margin: 12px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.team .team_member .team_img{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+</style>
+<body>
+    <main>
+        <div class="glass">
+            <div class="text">
+            <div class="p">
+                <p>Beacon of Hope Counseling and Career Centre in conjunction with Home of Love and Empowerment Project has it office at Nyambene House 3rd floor room 6c opposite Gill House. It was established in the year 2009, having adequate experience so far, on the four main areas, (Counseling, training, supervision and consultancy) with more volunteering initiative on the same, through our cooperate social responsibility program. 
+                  BHCC Centre is grounded on character, personal and professional development. It is staffed by adequate professional counselors, trainers and supervision who always exceeds client expectations.
+                  With absolute focus on counseling, training and consultancy services, training and consultancy services BHCC Centre promotes an integration approach to counseling based on a humanistic model of counseling and training.
+                  In administrating the above services, great care and attention is taken to respect and enhance the autonomy of client, trainers, supervisors as well as internal staffs and faculties.</p>
+                  <p>
+                    The organizations are currently collaborating with the following institutions:
+                    <ul>
+                      <li>Africa Institute of Professional Counseling (AIPC) in offering Certificate courses.</li>
+                      <li>Kenya Counseling and Psychological Association (KCPA) for Consultancy Services and Trainings.</li>
+                    </ul>
+                    major focus is on: <br>
+                    To offer professional training in counseling and related behavioral science
+                    To conduct research in the field of counseling.
+                    To offer counselor supervision services in Kenya and in the region.
+                    To play a significant role in the fight against social challenges like drug abuse, HIV/AIDS and domestic valence.
+                    To collaborate with other institutions in the field of counseling and related behavioral science.
+                    To build capacity in trauma and management to the meet disaster situations in the region.
+                  </p>
+            </div>
+            </div>
+    </main>
+    <div class="circle1"><img id="img1" src="{% static 'businessapp/images/bealogo.png' %}" alt="griff"></div>
+    <div class="circle2"><img id="img2" src="{% static 'businessapp/images/hologo.jpeg' %}" alt="griffins"></div>
+
+    <!--OUR TEAM-->
+
+</div>
+<div class="wrapper">
+    <h1>Our Team</h1>
+    <div class="team">
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'businessapp/images/griff.jpeg' %}" alt="griffins">
+        </div>
+        <h3>ONYANGO ODUOL</h3>
+        <p class="role">Junior Software Developer</p>
+        <p>
+          AS a Software Developer it is within my capabilities to design, create deploy and support software(a website, mobile application, desktop applications, e-commerce solutions). Data analytics is my thing and I have wide knowledge the related line. I'm proficient in Kotlin, Java, Rust, pHp and python. I'm an AI evangelist I understand ML, DL, RL in depth and I get exited with code
+          I work hand in hand with the organizations to solve it related challenges <br>
+          <span>griffinesonyango@gmail.com</span> <br>
+          <span>https://www.linkedin.com/in/griffines-onyango-a138b11b4/</span>
+        </p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'businessapp/images/ebba.jpeg' %}" alt="griff">
+        </div>
+        <h3>EBBA OTIENO MAGOLO</h3>
+        <p class="role">Director HOLEP</p>
+        <p>
+          Ebba loves what she does and she does what she loves with a passion! <br>
+          Counselling psychologist,  Educationist, trainer and program coordinator and a poet. Ebba has organised and done several programmes with PSI, KHIBIT,  and The National Treasury amongst other reputable organisation  she has successfully done workshops, trainings and she is also a qualified therapist tender and compassionate with the clients.
+Ebba Magolo understands the language of children and happily does child counselling. Currently the Director HOLEP
+        </p>
+      </div>
+      <div class="team_member">
+        <div class="team_img">
+          <img src="{% static 'businessapp/images/pp.jpeg' %}" alt="Team_image">
+        </div>
+        <h3>JULIUS GITARI</h3>
+        <p class="role">Director</p>
+        <p>
+          Well skilled, trained, competent, professional trainer, teacher, marketer, has masters and has served in field for over 10 yrs. He is popular for his speciality in Psychology counseling
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+
+{%endblock%}
